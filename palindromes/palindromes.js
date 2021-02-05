@@ -1,11 +1,17 @@
 const palindromes = function(palindrome) {
+    const regex = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g;
     let reversedString = '';
-        for (let n = 1; n <= palindrome.length; n++) {
+    let string = palindrome.toLowerCase();
+    string = string.replace(regex, "");
+        for (let n = 1; n <= string.length; n++) {
             //concatenate characters in reverse order, add to new variable
-            reversedString += (palindrome.charAt(palindrome.length -n));
-            //console.log(reversedString);
+            reversedString += (string.charAt(string.length -n));
+            reversedString.toLowerCase();
+            console.log(string);
+            console.log(reversedString);
+            
         }
-        if (reversedString == palindrome) {
+        if (reversedString == string) {
             return true;
         }
         else {

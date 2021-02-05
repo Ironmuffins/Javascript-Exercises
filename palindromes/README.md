@@ -18,7 +18,7 @@ palindromes('tacos') // false
 
 
 Features added:
-The function returns the correct result for single-word strings
+The function returns the correct result for single-word strings, and works with capital letters and puncuation.
 
 Features to be added in future update:
-Return correct result if there are spaces, capital letters, and punctuation.
+Return correct result if there are mulitple words.
