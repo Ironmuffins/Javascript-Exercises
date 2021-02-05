@@ -31,5 +31,10 @@ negative numbers should work as well:
 ```javascript
 caesar('Mjqqt, Btwqi!', -5) // returns 'Hello, World!'
 ```
+Student notes:
 
+Functionality in place:
+None. Work in progess.
 
+Functionality to be added:
+Caesar function will take a string and return a new string with the letters shifted up or down in the alphabet by an input amount.
