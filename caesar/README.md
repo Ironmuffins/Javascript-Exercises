@@ -33,8 +33,11 @@ caesar('Mjqqt, Btwqi!', -5) // returns 'Hello, World!'
 ```
 Student notes:
 
+New functions:
+Added paramater for shift value. Returns shifted value.
+
 Functionality in place:
-function converts string of letters into charcode values and then back into individual letters.
+Function takes string and shift value and converts string to correctly shifted values.
 
 Functionality to be added:
-Will add paramater to function, which will shift the charcode values and return shifted letter.
+Will add compatibility with puncuation and ability to wrap around alphabet both forward and back.
