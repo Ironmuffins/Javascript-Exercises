@@ -34,7 +34,7 @@ caesar('Mjqqt, Btwqi!', -5) // returns 'Hello, World!'
 Student notes:
 
 Functionality in place:
-function converts string letters into an array of charcode values.
+function converts string of letters into charcode values and then back into individual letters.
 
 Functionality to be added:
-Caesar function will take a string and return a new string with the letters shifted up or down in the alphabet by an input amount.
+Will add paramater to function, which will shift the charcode values and return shifted letter.
