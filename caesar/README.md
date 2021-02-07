@@ -34,7 +34,7 @@ caesar('Mjqqt, Btwqi!', -5) // returns 'Hello, World!'
 Student notes:
 
 New functions:
-None
+Function now ignores spaces and punctuation.
 
 Functionality in place:
 Function takes string and shift value and converts string to correctly shifted values.
