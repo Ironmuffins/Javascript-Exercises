@@ -1,51 +1,52 @@
-const caesar = function(cipher, n) {
+const caesar = function(word, n) {
     //initialize variables
     let unicode = 0;
-    let shiftvalue = 0;
     let recoded = '';
     let newUnicode = 0;
-    for (let i = 0; i < cipher.length; i++) {
-        unicode = (cipher.charCodeAt(i));
-        //detect Capital letters
+    for (let i = 0; i < word.length; i++) {
+        unicode = (word.charCodeAt(i));
+        //capital letters
         if (unicode >= 65 && unicode <= 90) {
             newUnicode = (unicode + (n))
             if (newUnicode < 65) {
-                shiftvalue = n + 26;
-                newUnicode = (unicode + shiftvalue);
+                while (newUnicode < 65){
+                    newUnicode += 26;
+                    }
                 recoded += String.fromCharCode(newUnicode);
             } else if (newUnicode > 90) {
-                shiftvalue = n - 26;
-                newUnicode = (unicode + shiftvalue);
+                while (newUnicode > 90){
+                    newUnicode += -26;
+                    }
                 recoded += String.fromCharCode(newUnicode);
             } else {
             recoded += String.fromCharCode(newUnicode);
             }
-        //detect lowercase letter
+        //lowercase letters
         } else if (unicode >= 97 && unicode <= 122) {
             newUnicode = (unicode + (n)) 
             if (newUnicode < 97) {
-                shiftvalue = n + 26;
-                newUnicode = (unicode + shiftvalue);
+                while (newUnicode < 97){
+                    newUnicode += 26;
+                    }
                 recoded += String.fromCharCode(newUnicode);
             } else if (newUnicode > 122) {
-                shiftvalue = n - 26;
-                newUnicode = (unicode + shiftvalue);
+                while (newUnicode > 122){
+                    newUnicode += -26;
+                }
                 recoded += String.fromCharCode(newUnicode);
             } else {
             recoded += String.fromCharCode(newUnicode);
             }
-        } else {
+        //returns all non-letter characters such as punctuation
+        } else { 
             recoded += String.fromCharCode(unicode);
         }
     }
-    console.log(recoded);
     return recoded;  
 }
-
-//caesar('Hello, world!', -1);
-
 module.exports = caesar
 
-//A-Z 65-90 unicode Uppercase
-//91-96 puncuation
-//a-z 97-122 unicode lowercase
+//ACSII values:
+//65-90 Uppercase Letters
+//91-96 Puncuation
+//97-122 Lowercase Letters

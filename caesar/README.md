@@ -34,10 +34,10 @@ caesar('Mjqqt, Btwqi!', -5) // returns 'Hello, World!'
 Student notes:
 
 New functions:
-Function now wraps around alphabet for numbers under 26 and adds compatibility with punctuation.
+Function now wraps around alphabet for large scale shifts.
 
 Functionality in place:
-Function takes string and shift value and converts string to correctly shifted values. Function ignores spaces and punctuation.
+Function takes a string and shift value and converts string to correctly shifted values. Function ignores spaces and punctuation, and wraps around alphabet for small and large scale shift values, both positive and negative.
 
 Functionality to be added:
-Will work with large shift factors
+None, execpt condensing and cleaning up the code.
