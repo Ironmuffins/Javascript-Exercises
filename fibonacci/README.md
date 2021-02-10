@@ -10,10 +10,10 @@ fibonacci(6) // returns 8
 ```
 
 New features:
-User can now input any positive number into the function and the correct result is returned.
+Does not accept negative numbers
 
 Existing features:
-Works with positive numbers.
+Works with positive and negative numbers.
 
 Future features:
-Will give error message on negative numbers. Will accept and convert strings to integers.
+Will accept and convert strings to integers.

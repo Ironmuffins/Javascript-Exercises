@@ -16,7 +16,7 @@ describe('fibonacci', function() {
   it('works', function() {
     expect(fibonacci(25)).toEqual(75025);
   });
-  xit('doesn\'t accept negatives', function() {
+  it('doesn\'t accept negatives', function() {
     expect(fibonacci(-25)).toEqual("OOPS");
   });
   xit('DOES accept strings', function() {
