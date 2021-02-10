@@ -24,3 +24,13 @@ getTheTitles(books) // ['Book','Book2']
 ## Hints
 
 - You should use a built-in javascript method to do most of the work for you!
+
+
+New features:
+User can get an array of just the titles of the books.
+
+Existing featuers:
+Function returns the titles of books from an array.
+
+Planned featuers:
+None, except condensing and cleaning up the code.
