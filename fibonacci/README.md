@@ -10,10 +10,10 @@ fibonacci(6) // returns 8
 ```
 
 New features:
-Does not accept negative numbers
+User can now input strings, which will be converted to numbers.
 
 Existing features:
-Works with positive and negative numbers.
+Works with positive numbers and does not accept negative numbers. Strings are converted to numbers.
 
 Future features:
-Will accept and convert strings to integers.
+None, except condensing and cleaning up the code.
