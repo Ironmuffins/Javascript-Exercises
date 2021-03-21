@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Guestlist</title>
+    </head>
+    <body>
+        <!--add headers to differentite the lists-->
+        <h1>Guest Lists</h1>
+        <p class= 'admitted'></p>
+        <p class= 'refused'></p>
+    </body>
+    <script>
+        //establish guest list
+        const people = ['Chris', 'Anne', 'Colin', 'Terri', 'Phil', 'Lola', 'Sam', 'Kay', 'Bruce'];
+        const refused = document.querySelector('.refused');
+        const admitted = document.querySelector('.admitted');
+        refused.textContent = 'Refuse: ';
+        admitted.textContent = 'Admit: ';
+        //create loop which identifies refused guests
+        for (let i=0; i < 9; i++) {
+            if (people[i] === 'Phil' || people[i] === 'Lola') {
+                //add refused guests to refused list
+                refused.textContent += (people[i] + ", ")  
+            }
+            //add all other guests to approved list
+            else {
+                admitted.textContent += (people[i] + ", ");
+            }
+        }
+        //add a period to end of lists
+        refused.textContent = refused.textContent.slice(0, -2) + '.';
+        admitted.textContent = admitted.textContent.slice (0, -2) + '.';
+        
+    </script>
+</html>
